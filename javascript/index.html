@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Toggle Text and Color</title>
+</head>
+<body>
+  <button onclick="toggleText()">Click Me</button>
+  <button onclick="changeColor()">Change Colour</button>
+  <input type="text" id="nameInput" placeholder="Enter a name"> 
+  <button onclick="addName()">Add Name</button>
+  <ul id="list"></ul>
+  <p id="output">kec</p>
+
+  <script>
+    const toggleText = () => {
+      const output = document.getElementById('output');
+      output.textContent = output.textContent === "kec" ? "kongu" : "kec";
+    };
+
+    const changeColor = () => {
+      const output = document.getElementById('output');
+      output.style.color = output.style.color === 'blue' ? 'green' : 'blue';
+    };
+    const addName = () => {
+      const nameInput = document.getElementById('nameInput');
+      const list = document.getElementById('list');
+      const li = document.createElement('li');
+      list.appendChild(li);
+    };
+  </script>
+</body>
+</html>
