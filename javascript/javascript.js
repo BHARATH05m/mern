@@ -52,3 +52,13 @@ console.log(odd);
 var total= arr.reduce((val,num)=> val + num, 0);
 console.log(total); 
 
+//bharath-movie recommendation
+//arun-book review platform
+
+//asnchronous function example
+var details=async ()=>{
+    var response= await fetch('https://dummyjson.com/users');
+    var users= await response.json();
+    console.log(users);
+}
+details()

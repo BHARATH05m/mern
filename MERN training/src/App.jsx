@@ -1,21 +1,22 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React from "react";
+import Child from "./components/Child";
+import Home from "./components/Home";
+import Contact from "./components/Contact";  
+import Skills from "./components/Skills";
+import Counter from "./components/Counter";
 
-function App() {
-  const [count, setCount] = useState(0)
+const App = () => {
+  var fruit = ["Apple", "Banana", "Cherry"];
 
   return (
-    <>
-      <div>
-        <h1>HELLO WORLD</h1>
-      </div>
-      <div>
-        <h1>HELLO WORLD</h1>
-      </div>
-    </>
-  )
-}
+    <div>
+      <Child name="Bharath" phno="1234567890" dept="IT" />
+      <Home items={fruit} />
+      <Counter />
+      <Contact />
+      <Skills />
+    </div>
+  );
+};
 
-export default App
+export default App;
