@@ -13,6 +13,12 @@ const Hook = () => {
       <Link to="/effect2">
         <h1 className="nav-link">Effect2</h1>
       </Link>
+    <Link to="/ref">
+        <h1 className="nav-link">REF</h1>
+      </Link>
+    <Link to="/reducer">
+        <h1 className="nav-link">REDUCER</h1>
+    </Link>
     </div>
   );
 };

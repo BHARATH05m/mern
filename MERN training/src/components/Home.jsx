@@ -1,13 +1,10 @@
 import React from 'react';
-
+import About from './About';
+import images from '../assets/th.jpg';
 const Home = ({ items }) => {
   return (
     <div>
-      <ol>
-        {items.map((fruit, index) => (
-          <li key={index}>{fruit}</li>
-        ))}
-      </ol>
+      <About items={items} />
     </div>
   );
 };
