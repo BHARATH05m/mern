@@ -1,6 +1,4 @@
-import React from 'react';
 import About from './About';
-import images from '../assets/th.jpg';
 const Home = ({ items }) => {
   return (
     <div>
@@ -10,3 +8,6 @@ const Home = ({ items }) => {
 };
 
 export default Home;
+{/*
+mongodb+srv://BharathM:20-Jul-05@mern2025.sm7fkda.mongodb.net/
+*/}
